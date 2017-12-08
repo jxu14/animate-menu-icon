@@ -1,0 +1,62 @@
+#button1 {
+  height: 62px;
+  width: 62px;
+
+  position: relative;
+  margin: 2px;
+
+
+}
+
+#circle1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: blue;
+  z-index: 2;
+}
+
+.Button_Clicked #circle1 {
+  animation: rainbow 1s forwards;
+}
+
+/*.Button_Clicked #circle1 {
+  animation: expand2 1.1s;
+}*/
+
+#circle2 {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: #89FFFF;
+  z-index: 3;
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+}
+
+/*.Button_Clicked #circle2 {
+  animation: rainbow 1s forwards;
+}*/
+
+.Button_Clicked #circle2 {
+  animation: expand2 1.1s;
+}
+
+@keyframes rainbow {
+  0% {background-color: red;}
+  16.67% {background-color: orange;}
+  33.33% {background-color: yellow;}
+  50% {background-color: green;}
+  66.67% {background-color: blue;}
+  83.33% {background-color: indigo;}
+  90% {background-color: violet;}
+  100% {background-color: pink;}
+}
+
+@keyframes expand2 {
+  0% {width: 45px; height: 45px;}
+  50% {width: 52px; height: 52px; top: 4px; left: 4px;}
+  100% {width: 45px; height: 45px;}
+
+}
